@@ -2,7 +2,10 @@
 echo "	 
  <div class='main box block'>";
 	if($_GET['a'] == 'exists'){
-		echo "<p style='color:red'>This account already exists</p>";
+		echo "<p name='errortag' id='errortag' style='color:red'>This account already exists</p>";
+	}
+	if($_GET['a'] == 'bad'){
+		echo "<p name='errortag' id='errortag' style='color:red'>You cannot create an account with those characters</p>";
 	}
 	echo"<h1>Create Account</h1>
 	<form id='newaccount' name='newaccount' method='post' action='res/accounthandler.php'>

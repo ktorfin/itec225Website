@@ -1,4 +1,6 @@
-<?php echo '<!doctype html>
+<?php
+session_start();
+ echo '<!doctype html>
 <html>
 	<head>';
 if($_GET["p"] == 'info' ) {
@@ -35,9 +37,14 @@ echo '<title>Home</title>';
 		<ul class="alignright" id="navlist">
 			<a href="index.php"><li>Home</li></a>
 			<a href="index.php?p=info"><li>How it Works</li></a>
-			<a href="index.php?p=create"><li>Create Account</li></a>
-			<a href="index.php?p=login"><li>Sign In</li></a>
-			<a href="index.php?p=about"><li>About Us</li></a>
+			<a href="index.php?p=create"><li>Create Account</li></a>';
+			if(isset($_SESSION['username'])){
+				echo '<a href="res/signout.php"><li>Sign Out</li></a>';
+			}
+			else{
+				echo '<a href="index.php?p=login"><li>Sign In</li></a>';
+			}
+			echo' <a href="index.php?p=about"><li>About Us</li></a>
 		</ul>
 		<div style="clear: both;"></div>
 	</div>';
