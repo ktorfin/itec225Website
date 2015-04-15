@@ -1,22 +1,8 @@
-/* Tablet version */
-@media (min-width: 768px) {
-  .nav { width: 20%; }
-  .main { width: 80%; }
-}
 
-/* Desktop version */
-@media (min-width: 960px) {
-  .nav { width: 20%; }
-  .main { width: 100%; }
-  .links { width: 20%; }
-.logo {	width: 50%;height: 50%;	}
-.serverpic{width: 50%;}
-.quote{width: 50%;font-size: 80%;}
-}
 
 
 .serverpic{
-width: 50%;
+width: 100%;
 
 }
 
@@ -24,7 +10,7 @@ width: 50%;
 
 
 .quote{
-width: 50%;
+width: 100%;
 font-size: 3em;
 text-align: center;
 }
@@ -102,4 +88,23 @@ body {
 	background-color: #CDF;
 	border: solid 1px #BCD;
 }
+/* Tablet version */
+@media (min-width: 768px) {
+  .nav { width: 20%; }
+  .main { width: 80%; }
 
+  .links { width: 20%; }
+.logo {	width: 50%;height: 50%;	}
+.serverpic{width: 50%;}
+.quote{width: 50%;font-size: 80%;}
+}
+
+/* Desktop version */
+@media (min-width: 960px) {
+  .nav { width: 20%; }
+  .main { width: 100%; }
+  .links { width: 20%; }
+.logo {	width: 50%;height: 50%;	}
+.serverpic{width: 50%;}
+.quote{width: 50%;font-size: 80%;}
+}
